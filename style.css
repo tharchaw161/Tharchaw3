@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2b2b3c, #3a3a5c);
+    overflow: hidden;
+    color: white;
+}
+
+/* Soft floating paw background */
+body::before {
+    content: "🐾 🐾 🐾 🐾 🐾";
+    position: absolute;
+    font-size: 100px;
+    opacity: 0.05;
+    top: 20%;
+    left: 10%;
+}
+
+/* Login box */
+.login-container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Headings */
+.login-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-container h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #ff7aa2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #ff4f85;
+    transform: scale(1.05);
+}
+
+/* Error message */
+#error {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff6b6b;
+}
+/* Container */
+.container {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    min-height: 100vh;
+}
+
+/* Grid layout like pizza app */
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;   /* This makes it responsive */
+    margin-top: 40px;
+}
+
+/* Card design */
+.cat-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.cat-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Image */
+.cat-card img,
+.cat-card video {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Content */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+}
+.cat-card {
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.cat-card img,
+.cat-card video {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    padding: 15px;
+}
